@@ -1,0 +1,204 @@
+[
+  {
+    "model": "authtoken.token",
+    "pk": "0d2aff5f4f1553b9c9515cc8a50e79811a0329cc",
+    "fields": {
+      "user": 2,
+      "created": "2021-03-09T10:37:43.961Z"
+    }
+  },
+  {
+    "model": "authtoken.token",
+    "pk": "428c32bbd5b95dac547ae4e6de27deaef44827c4",
+    "fields": {
+      "user": 3,
+      "created": "2021-03-09T10:37:43.968Z"
+    }
+  },
+  {
+    "model": "authtoken.token",
+    "pk": "a8de2605d34e99e4ddad7a042528a78b1c6e9c17",
+    "fields": {
+      "user": 1,
+      "created": "2021-03-09T10:37:43.954Z"
+    }
+  },
+  {
+    "model": "prescription.user",
+    "pk": 1,
+    "fields": {
+      "password": "12345678",
+      "last_login": null,
+      "created": "2021-03-09T06:27:09.604Z",
+      "updated": "2021-03-09T06:27:09.604Z",
+      "phone": "+917555117533",
+      "address_1": "Indore",
+      "address_2": "",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "zip_code": "452010",
+      "email": "piyush@gmail.com",
+      "is_active": true,
+      "is_staff": false,
+      "first_name": "piyush",
+      "last_name": "singh",
+      "age": 26,
+      "sex": "male",
+      "type": "doctor"
+    }
+  },
+  {
+    "model": "prescription.user",
+    "pk": 2,
+    "fields": {
+      "password": "12345678",
+      "last_login": null,
+      "created": "2021-03-09T06:27:49.727Z",
+      "updated": "2021-03-09T06:27:49.727Z",
+      "phone": "+917555117533",
+      "address_1": "Indore",
+      "address_2": "",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "zip_code": "452010",
+      "email": "piyush_test@gmail.com",
+      "is_active": true,
+      "is_staff": false,
+      "first_name": "piyush_test",
+      "last_name": "singh",
+      "age": 26,
+      "sex": "male",
+      "type": "patient"
+    }
+  },
+  {
+    "model": "prescription.user",
+    "pk": 3,
+    "fields": {
+      "password": "12345678",
+      "last_login": null,
+      "created": "2021-03-09T06:29:01.241Z",
+      "updated": "2021-03-09T06:29:01.241Z",
+      "phone": "+917555117533",
+      "address_1": "Indore",
+      "address_2": "",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "zip_code": "452010",
+      "email": "py@gmail.com",
+      "is_active": true,
+      "is_staff": false,
+      "first_name": "py",
+      "last_name": "singh",
+      "age": 26,
+      "sex": "male",
+      "type": "chemist"
+    }
+  },
+  {
+    "model": "prescription.drugs",
+    "pk": 1,
+    "fields": {
+      "created": "2021-03-09T06:38:44.383Z",
+      "updated": "2021-03-09T06:38:44.383Z",
+      "name": "8-hydroxyquinoline (New-Skin Liquid Spray Bandage) Spray",
+      "price": 100,
+      "quantity": 20,
+      "benefit": "Skin Spray",
+      "side_effect": "user as per doctor advice, access use may cause itching",
+      "advice": "For External user only"
+    }
+  },
+  {
+    "model": "prescription.drugs",
+    "pk": 2,
+    "fields": {
+      "created": "2021-03-09T06:39:53.078Z",
+      "updated": "2021-03-09T06:39:53.078Z",
+      "name": "abacavir sulfate (Ziagen)",
+      "price": 200,
+      "quantity": 15,
+      "benefit": "Skin toning",
+      "side_effect": "user as per doctor advice, access use may cause itching",
+      "advice": "For External user only"
+    }
+  },
+  {
+    "model": "prescription.drugs",
+    "pk": 3,
+    "fields": {
+      "created": "2021-03-09T06:40:51.568Z",
+      "updated": "2021-03-09T06:40:51.568Z",
+      "name": "abaloparatide (Tymlos)",
+      "price": 250,
+      "quantity": 10,
+      "benefit": "hair removal",
+      "side_effect": "user as per doctor advice, access use may cause itching",
+      "advice": "For External user only"
+    }
+  },
+  {
+    "model": "prescription.pharmacy",
+    "pk": 1,
+    "fields": {
+      "created": "2021-03-09T06:42:23.239Z",
+      "updated": "2021-03-09T06:42:23.239Z",
+      "phone": "+917555117533",
+      "address_1": "Indore",
+      "address_2": "",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "zip_code": "452010",
+      "user": 3,
+      "website": "https://www.ayushman.net/",
+      "name": "Aayushman",
+      "drugs": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "prescription.prescription",
+    "pk": 1,
+    "fields": {
+      "created": "2021-03-09T10:41:14.339Z",
+      "updated": "2021-03-09T10:41:14.339Z",
+      "symptoms": "skin disease",
+      "precautions": "avoid junk food",
+      "prescriber": 1,
+      "patient": 2
+    }
+  },
+  {
+    "model": "prescription.medicines",
+    "pk": 1,
+    "fields": {
+      "drugs": 1,
+      "quantity": 2,
+      "prescription": 1
+    }
+  },
+  {
+    "model": "prescription.medicines",
+    "pk": 2,
+    "fields": {
+      "drugs": 2,
+      "quantity": 3,
+      "prescription": 1
+    }
+  },
+  {
+    "model": "prescription.booking",
+    "pk": 1,
+    "fields": {
+      "created": "2021-03-09T10:41:38.828Z",
+      "updated": "2021-03-09T10:41:38.828Z",
+      "user": 2,
+      "pharmacy": 1,
+      "user_prescription": 1,
+      "amount": 800
+    }
+  }
+]
